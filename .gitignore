@@ -1,6 +1,9 @@
 #Debug Files
 *.log
 
+#Visual Studio Files
+*.sdf
+
 # Compiled Object files
 *.slo
 *.lo
