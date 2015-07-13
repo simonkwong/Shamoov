@@ -1,0 +1,14 @@
+
+material TenUnits
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture TenUnits.png
+			}
+		}
+	}
+}

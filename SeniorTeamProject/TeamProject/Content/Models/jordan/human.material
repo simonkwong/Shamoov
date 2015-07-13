@@ -1,0 +1,427 @@
+material "cubeBodymat"
+{
+	technique cubeBodymat_technique
+	{
+		pass cubeBodymat_standard
+		{
+			shading phong
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 1 1 1 1 110.209
+			emissive 0 0 0 1
+			vertex_program_ref cubevsLightGENNORM0
+			{
+			}
+			fragment_program_ref cubefpLightGENDIFF0SPEC0NORM0
+			{
+				param_named normalMul float 1
+			}
+
+			texture_unit cubeBodymat_Diffuse#0
+			{
+				texture cubeFuseModel_Body_diffuse.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+
+			texture_unit cubeBodymat_Specular#1
+			{
+				texture cubeFuseModel_Body_specular.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+
+			texture_unit cubeBodymat_Normal#2
+			{
+				texture cubeFuseModel_Body_normal.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+	technique cubeBodymat_basic_technique
+	{
+	scheme basic_mat
+		pass cubeBodymat_standard
+		{
+			shading phong
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 1 1 1 1 110.209
+			emissive 0 0 0 1
+
+			texture_unit cubeBodymat_Diffuse#3
+			{
+				texture cubeFuseModel_Body_diffuse.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+}
+material "cubeHairmat"
+{
+	technique cubeHairmat_technique
+	{
+		pass cubeHairmat_standard
+		{
+			shading phong
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 1 1 1 1 110.209
+			emissive 0 0 0 1
+			vertex_program_ref cubevsLightGENNORM0
+			{
+			}
+			fragment_program_ref cubefpLightGENDIFF0SPEC0NORM0
+			{
+				param_named normalMul float 1
+			}
+
+			texture_unit cubeHairmat_Diffuse#0
+			{
+				texture cubeFuseModel_Hair_diffuse.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+
+			texture_unit cubeHairmat_Specular#1
+			{
+				texture cubeFuseModel_Hair_specular.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+
+			texture_unit cubeHairmat_Normal#2
+			{
+				texture cubeFuseModel_Hair_normal.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+	technique cubeHairmat_basic_technique
+	{
+	scheme basic_mat
+		pass cubeHairmat_standard
+		{
+			shading phong
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 1 1 1 1 110.209
+			emissive 0 0 0 1
+
+			texture_unit cubeHairmat_Diffuse#3
+			{
+				texture cubeFuseModel_Hair_diffuse.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+}
+material "cubeTopmat"
+{
+	technique cubeTopmat_technique
+	{
+		pass cubeTopmat_standard
+		{
+			shading phong
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 1 1 1 1 110.209
+			emissive 0 0 0 1
+			vertex_program_ref cubevsLightGENNORM0
+			{
+			}
+			fragment_program_ref cubefpLightGENDIFF0SPEC0NORM0
+			{
+				param_named normalMul float 1
+			}
+
+			texture_unit cubeTopmat_Diffuse#0
+			{
+				texture cubeFuseModel_Top_diffuse.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+
+			texture_unit cubeTopmat_Specular#1
+			{
+				texture cubeFuseModel_Top_specular.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+
+			texture_unit cubeTopmat_Normal#2
+			{
+				texture cubeFuseModel_Top_normal.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+	technique cubeTopmat_basic_technique
+	{
+	scheme basic_mat
+		pass cubeTopmat_standard
+		{
+			shading phong
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 1 1 1 1 110.209
+			emissive 0 0 0 1
+
+			texture_unit cubeTopmat_Diffuse#3
+			{
+				texture cubeFuseModel_Top_diffuse.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+}
+material "cubeBottommat"
+{
+	technique cubeBottommat_technique
+	{
+		pass cubeBottommat_standard
+		{
+			shading phong
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 1 1 1 1 110.209
+			emissive 0 0 0 1
+			vertex_program_ref cubevsLightGENNORM0
+			{
+			}
+			fragment_program_ref cubefpLightGENDIFF0SPEC0NORM0
+			{
+				param_named normalMul float 1
+			}
+
+			texture_unit cubeBottommat_Diffuse#0
+			{
+				texture cubeFuseModel_Bottom_diffuse.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+
+			texture_unit cubeBottommat_Specular#1
+			{
+				texture cubeFuseModel_Bottom_specular.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+
+			texture_unit cubeBottommat_Normal#2
+			{
+				texture cubeFuseModel_Bottom_normal.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+	technique cubeBottommat_basic_technique
+	{
+	scheme basic_mat
+		pass cubeBottommat_standard
+		{
+			shading phong
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 1 1 1 1 110.209
+			emissive 0 0 0 1
+
+			texture_unit cubeBottommat_Diffuse#3
+			{
+				texture cubeFuseModel_Bottom_diffuse.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+}
+material "cubeBeardmat"
+{
+	technique cubeBeardmat_technique
+	{
+		pass cubeBeardmat_standard
+		{
+			shading phong
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 1 1 1 1 110.209
+			emissive 0 0 0 1
+			vertex_program_ref cubevsLightGENNORM0
+			{
+			}
+			fragment_program_ref cubefpLightGENDIFF0SPEC0NORM0
+			{
+				param_named normalMul float 1
+			}
+
+			texture_unit cubeBeardmat_Diffuse#0
+			{
+				texture cubeFuseModel_Beard_diffuse.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+
+			texture_unit cubeBeardmat_Specular#1
+			{
+				texture cubeFuseModel_Beard_specular.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+
+			texture_unit cubeBeardmat_Normal#2
+			{
+				texture cubeFuseModel_Beard_normal.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+	technique cubeBeardmat_basic_technique
+	{
+	scheme basic_mat
+		pass cubeBeardmat_standard
+		{
+			shading phong
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 1 1 1 1 110.209
+			emissive 0 0 0 1
+
+			texture_unit cubeBeardmat_Diffuse#3
+			{
+				texture cubeFuseModel_Beard_diffuse.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+}
+material "cubeMoustachemat"
+{
+	technique cubeMoustachemat_technique
+	{
+		pass cubeMoustachemat_standard
+		{
+			shading phong
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 1 1 1 1 110.209
+			emissive 0 0 0 1
+			vertex_program_ref cubevsLightGENNORM0
+			{
+			}
+			fragment_program_ref cubefpLightGENDIFF0SPEC0NORM0
+			{
+				param_named normalMul float 1
+			}
+
+			texture_unit cubeMoustachemat_Diffuse#0
+			{
+				texture cubeFuseModel_Moustache_diffuse.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+
+			texture_unit cubeMoustachemat_Specular#1
+			{
+				texture cubeFuseModel_Moustache_specular.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+
+			texture_unit cubeMoustachemat_Normal#2
+			{
+				texture cubeFuseModel_Moustache_normal.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+	technique cubeMoustachemat_basic_technique
+	{
+	scheme basic_mat
+		pass cubeMoustachemat_standard
+		{
+			shading phong
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 1 1 1 1 110.209
+			emissive 0 0 0 1
+
+			texture_unit cubeMoustachemat_Diffuse#3
+			{
+				texture cubeFuseModel_Moustache_diffuse.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+}
+material "cubeShoesmat"
+{
+	technique cubeShoesmat_technique
+	{
+		pass cubeShoesmat_standard
+		{
+			shading phong
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 1 1 1 1 110.209
+			emissive 0 0 0 1
+			vertex_program_ref cubevsLightGENNORM0
+			{
+			}
+			fragment_program_ref cubefpLightGENDIFF0SPEC0NORM0
+			{
+				param_named normalMul float 1
+			}
+
+			texture_unit cubeShoesmat_Diffuse#0
+			{
+				texture cubeFuseModel_Shoes_diffuse.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+
+			texture_unit cubeShoesmat_Specular#1
+			{
+				texture cubeFuseModel_Shoes_specular.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+
+			texture_unit cubeShoesmat_Normal#2
+			{
+				texture cubeFuseModel_Shoes_normal.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+	technique cubeShoesmat_basic_technique
+	{
+	scheme basic_mat
+		pass cubeShoesmat_standard
+		{
+			shading phong
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 1 1 1 1 110.209
+			emissive 0 0 0 1
+
+			texture_unit cubeShoesmat_Diffuse#3
+			{
+				texture cubeFuseModel_Shoes_diffuse.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+}

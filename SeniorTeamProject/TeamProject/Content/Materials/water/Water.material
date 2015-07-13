@@ -1,0 +1,252 @@
+
+material Water/0
+{
+	technique
+	{
+		pass
+		{
+			scene_blend colour_blend
+			depth_write off
+
+			texture_unit
+			{
+				texture Water01.jpg
+				env_map spherical
+				scroll_anim 0.01 0.01
+			}
+		}
+	}
+}
+material Water/1
+{
+	technique
+	{
+		pass
+		{
+			scene_blend colour_blend
+			depth_write off
+
+			texture_unit
+			{
+				texture BeachStones.jpg
+				scale 0.25 0.25
+			}
+
+			texture_unit
+			{
+				texture Water01.jpg
+				env_map spherical
+				scroll_anim 0.01 0.01
+			}
+		}
+	}
+}
+material Water/2
+{
+	technique
+	{
+		pass
+		{
+			scene_blend colour_blend
+			depth_write off
+
+			texture_unit
+			{
+				texture Water01.jpg
+				scroll_anim 0.01 0.01
+			}
+		}
+	}
+}
+material Water/3
+{
+	technique
+	{
+		pass
+		{
+			scene_blend colour_blend
+			depth_write off
+
+			texture_unit
+			{
+				texture Water02.jpg
+				env_map spherical
+				scroll_anim 0.01 0.01
+				rotate_anim 0.03
+			}
+		}
+	}
+}
+material Water/4
+{
+	technique
+	{
+		pass
+		{
+			cull_hardware none
+			cull_software none
+
+			texture_unit
+			{
+				texture Water02.jpg
+				env_map spherical
+				scroll_anim 0.01 0.01
+			}
+		}
+	}
+}
+material Water/5
+{
+	technique
+	{
+		pass
+		{
+			cull_hardware none
+			cull_software none
+
+			texture_unit
+			{
+				texture BeachStones.jpg
+				scale 0.25 0.25
+			}
+
+			texture_unit
+			{
+				texture Water01.jpg
+				env_map spherical
+				scroll_anim 0.01 0.01
+			}
+		}
+	}
+}
+material Water/6
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+
+			texture_unit
+			{
+				cubic_texture cubescene.jpg combinedUVW
+				tex_address_mode clamp
+				env_map cubic_reflection
+			}
+		}
+	}
+}
+material Water/7
+{
+	technique
+	{
+		pass
+		{
+			cull_hardware none
+			cull_software none
+
+			texture_unit
+			{
+				texture BeachStones.jpg
+				scale 0.25 0.25
+			}
+
+			texture_unit
+			{
+				cubic_texture cubescene.jpg combinedUVW
+				tex_address_mode clamp
+				env_map cubic_reflection
+			}
+		}
+	}
+}
+material Water/8
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend add
+			depth_write off
+			cull_hardware none
+			cull_software none
+
+			texture_unit
+			{
+				cubic_texture cubescene.jpg combinedUVW
+				tex_address_mode clamp
+				env_map cubic_reflection
+			}
+		}
+	}
+}
+material Water/9
+{
+	technique
+	{
+		pass
+		{
+			scene_blend colour_blend
+			depth_write off
+
+			texture_unit
+			{
+				texture Water01.jpg
+				scale 0.25 0.25
+			}
+
+			texture_unit
+			{
+				texture Water03.jpg
+				env_map spherical
+				scroll_anim 0.02 0.02
+				rotate_anim 0.01
+			}
+		}
+	}
+}
+material Water/10
+{
+	technique
+	{
+		pass
+		{
+			scene_blend colour_blend
+			depth_write off
+
+			texture_unit
+			{
+				texture Water03.jpg
+				env_map spherical
+				scroll_anim 0.02 0.02
+				rotate_anim 0.01
+			}
+		}
+	}
+}
+material Water/11
+{
+	technique
+	{
+		pass
+		{
+			scene_blend colour_blend
+			depth_write off
+
+			texture_unit
+			{
+				texture Water04.jpg
+				scale 0.2 0.2
+			}
+
+			texture_unit
+			{
+				texture Water04.jpg
+				env_map spherical
+				scroll_anim 0.01 0.0 0.01
+				rotate_anim 0.01
+			}
+		}
+	}
+}

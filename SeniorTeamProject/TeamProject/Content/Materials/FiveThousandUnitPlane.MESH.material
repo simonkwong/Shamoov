@@ -1,0 +1,15 @@
+material 02-Default
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture FiveThousandUnits.png
+			}
+		}
+
+	}
+
+}

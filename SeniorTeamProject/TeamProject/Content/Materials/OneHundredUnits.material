@@ -1,0 +1,14 @@
+
+material OneHundredUnits
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture OneHundredUnits.png
+			}
+		}
+	}
+}

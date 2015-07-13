@@ -1,0 +1,26 @@
+material Material#80
+{
+	technique
+	{
+		pass
+		{	
+			scene_blend colour_blend
+
+			texture_unit
+			{
+				texture Water04.jpg
+				scale 0.2 0.2
+			}
+
+			texture_unit
+			{
+				texture Water04.jpg
+				env_map spherical
+				scroll_anim 0.01 0.0 0.01
+				rotate_anim 0.01
+			}
+			}
+
+	}
+
+}

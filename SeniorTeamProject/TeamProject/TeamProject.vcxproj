@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BCB8C3C9-D5E6-4EC4-86CE-08FC0EC149B7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TeamProject</RootNamespace>
+    <ProjectName>TeamProject</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../curl-7.37.0-win32/curl-7.37.0-win32/include;../OpenSSL-Win32/include;../SDL2-2.0.3/include;../SDL2_mixer-2.0.0/include;C:\Program Files\Microsoft SDKs\Kinect\v1.8\inc;$(OGRE_HOME)/include/OGRE/Overlay;$(OGRE_HOME)/boost/;$(OGRE_HOME)/include/OIS;$(OGRE_HOME)/include/OGRE;$(OGRE_HOME)/include;../Bullet/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\curl-7.37.0-win32\curl-7.37.0-win32\lib\;../SDL2_mixer-2.0.0/lib/x86/;../SDL2-2.0.3/lib/x86/;..\OpenSSL-Win32\lib;C:\Program Files\Microsoft SDKs\Kinect\v1.8\lib\x86;$(OGRE_HOME)/boost/lib;$(OGRE_HOME)/lib/$(configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OIS_d.lib;OgreMain_d.lib;OgreOverlay_d.lib;winmm.lib;SDL2_mixer.lib;SDL2.lib;SDL2main.lib;libcurl.lib;Ws2_32.lib;libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(OGRE_HOME)\bin\$(Configuration)\OgreMain_d.dll" "$(OutDir)"
+copy "$(OGRE_HOME)\bin\$(Configuration)\OgreOverlay_d.dll" "$(OutDir)"
+copy "$(OGRE_HOME)\bin\$(Configuration)\OIS_d.dll" "$(OutDir)"
+copy "$(OGRE_HOME)\bin\$(Configuration)\RenderSystem_Direct3D9_d.dll" "$(OutDir)"
+copy "$(OGRE_HOME)\bin\$(Configuration)\RenderSystem_Direct3D11_d.dll" "$(OutDir)"
+copy "$(OGRE_HOME)\bin\$(Configuration)\RenderSystem_GL_d.dll" "$(OutDir)"
+copy "$(OGRE_HOME)\bin\$(Configuration)\Plugin_OctreeZone_d.dll" "$(OutDir)"
+copy "$(OGRE_HOME)\bin\$(Configuration)\Plugin_OctreeSceneManager_d.dll" "$(OutDir)"
+copy "$(OGRE_HOME)\bin\$(Configuration)\Plugin_PCZSceneManager_d.dll" "$(OutDir)"
+copy "..\SDL2-2.0.3\lib\x86\SDL2.dll" "$(OutDir)"
+copy "..\SDL2_mixer-2.0.0\lib\x86\SDL2_mixer.dll" "$(OutDir)"
+copy "..\SDL2_mixer-2.0.0\lib\x86\libogg-0.dll" "$(OutDir)"
+copy "..\SDL2_mixer-2.0.0\lib\x86\libvorbis-0.dll" "$(OutDir)"
+copy "..\SDL2_mixer-2.0.0\lib\x86\libvorbisfile-3.dll" "$(OutDir)"
+copy "..\curl-7.37.0-win32\curl-7.37.0-win32\dlls\* " "$(OutDir)"
+
+copy plugins_d.cfg "$(OutDir)"
+copy resources_d.cfg "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\Microsoft SDKs\Kinect\v1.8\inc;$(OGRE_HOME)/include/OGRE/Overlay;$(OGRE_HOME)/boost/;$(OGRE_HOME)/include/OIS;$(OGRE_HOME)/include/OGRE;$(OGRE_HOME)/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Program Files\Microsoft SDKs\Kinect\v1.8\lib\x86;$(OGRE_HOME)/boost/lib;$(OGRE_HOME)/lib/$(configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OgreMain.lib;OIS.lib;OgreOverlay.lib;Ws2_32.lib;libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(OGRE_HOME)\bin\$(Configuration)\OgreMain.dll" "$(OutDir)"
+copy "$(OGRE_HOME)\bin\$(Configuration)\OgreOverlay.dll" "$(OutDir)"
+copy "$(OGRE_HOME)\bin\$(Configuration)\OIS.dll" "$(OutDir)"
+copy "$(OGRE_HOME)\bin\$(Configuration)\RenderSystem_Direct3D9.dll" "$(OutDir)"
+copy "$(OGRE_HOME)\bin\$(Configuration)\RenderSystem_Direct3D11.dll" "$(OutDir)"
+copy "$(OGRE_HOME)\bin\$(Configuration)\RenderSystem_GL.dll" "$(OutDir)"
+copy "$(OGRE_HOME)\bin\$(Configuration)\Plugin_OctreeZone.dll" "$(OutDir)"
+copy "$(OGRE_HOME)\bin\$(Configuration)\Plugin_OctreeSceneManager.dll" "$(OutDir)"
+copy "$(OGRE_HOME)\bin\$(Configuration)\Plugin_PCZSceneManager.dll" "$(OutDir)"
+
+copy plugins.cfg "$(OutDir)"
+copy resources.cfg "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Console.h" />
+    <ClInclude Include="HUD.h" />
+    <ClInclude Include="GameLibrary.h" />
+    <ClInclude Include="DynamicObject.h" />
+    <ClInclude Include="IOgreObject.h" />
+    <ClInclude Include="IPhysObject.h" />
+    <ClInclude Include="InputHandler.h" />
+    <ClInclude Include="JsonUtils.h" />
+    <ClInclude Include="Kinect.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="LoginWrapper.h" />
+    <ClInclude Include="MainListener.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="PhysicsManager.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="rapidjson\allocators.h" />
+    <ClInclude Include="rapidjson\document.h" />
+    <ClInclude Include="rapidjson\encodedstream.h" />
+    <ClInclude Include="rapidjson\encodings.h" />
+    <ClInclude Include="rapidjson\error\en.h" />
+    <ClInclude Include="rapidjson\error\error.h" />
+    <ClInclude Include="rapidjson\filereadstream.h" />
+    <ClInclude Include="rapidjson\filestream.h" />
+    <ClInclude Include="rapidjson\filewritestream.h" />
+    <ClInclude Include="rapidjson\internal\biginteger.h" />
+    <ClInclude Include="rapidjson\internal\diyfp.h" />
+    <ClInclude Include="rapidjson\internal\dtoa.h" />
+    <ClInclude Include="rapidjson\internal\ieee754.h" />
+    <ClInclude Include="rapidjson\internal\itoa.h" />
+    <ClInclude Include="rapidjson\internal\meta.h" />
+    <ClInclude Include="rapidjson\internal\pow10.h" />
+    <ClInclude Include="rapidjson\internal\stack.h" />
+    <ClInclude Include="rapidjson\internal\strfunc.h" />
+    <ClInclude Include="rapidjson\internal\strtod.h" />
+    <ClInclude Include="rapidjson\memorybuffer.h" />
+    <ClInclude Include="rapidjson\memorystream.h" />
+    <ClInclude Include="rapidjson\msinttypes\inttypes.h" />
+    <ClInclude Include="rapidjson\msinttypes\stdint.h" />
+    <ClInclude Include="rapidjson\prettywriter.h" />
+    <ClInclude Include="rapidjson\rapidjson.h" />
+    <ClInclude Include="rapidjson\reader.h" />
+    <ClInclude Include="rapidjson\stringbuffer.h" />
+    <ClInclude Include="rapidjson\writer.h" />
+    <ClInclude Include="Receivers.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="Stage.h" />
+    <ClInclude Include="StaticScenery.h" />
+    <ClInclude Include="TeamProject.h" />
+    <ClInclude Include="World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Console.cpp" />
+    <ClCompile Include="HUD.cpp" />
+    <ClCompile Include="GameLibrary.cpp" />
+    <ClCompile Include="DynamicObject.cpp" />
+    <ClCompile Include="InputHandler.cpp" />
+    <ClCompile Include="JsonUtils.cpp" />
+    <ClCompile Include="Kinect.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="LoginWrapper.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainListener.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="PhysicsManager.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="StaticScenery.cpp" />
+    <ClCompile Include="TeamProject.cpp" />
+    <ClCompile Include="World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bullet\build3\vs2010\BulletCollision.vcxproj">
+      <Project>{3c122656-b460-dc4f-9a8e-78e9471242d6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Bullet\build3\vs2010\BulletDynamics.vcxproj">
+      <Project>{2c1e6445-b58c-7d4f-9879-5ecae7cc22f5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Bullet\build3\vs2010\LinearMath.vcxproj">
+      <Project>{d59ca651-7719-8448-8372-e0ca39ce1491}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

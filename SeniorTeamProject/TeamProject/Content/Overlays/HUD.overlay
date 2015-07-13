@@ -1,0 +1,132 @@
+MenuBG
+{
+    zorder 10
+  
+    container Panel(MenuBG/Panel)
+    {
+      metrics_mode relative
+
+      left 0.0
+      top 0.0
+      width 1.0
+      height 1.0
+      material Menu/Background/Black
+    }
+}
+
+InstructionsBG
+{
+    zorder 300
+  
+    container Panel(InstructionsBG/Panel)
+    {
+      metrics_mode relative
+
+      left 0.05
+      top 0.4
+      width 0.9
+      height 1.0
+      material Menu/Background/Instructions
+
+      element TextArea(Instructions/Panel/Text1)
+      {
+      metrics_mode relative
+    
+         left 0.25
+         top 0.03
+         font_name BlueHighwayBig
+         char_height 0.05
+         colour 1 1 1
+      }
+ 
+    }
+}
+
+
+Hints
+{
+    zorder 200
+  
+    container Panel(Hints/Panel)
+    {
+      metrics_mode relative
+
+      left 0.05
+      top 0.2
+      width 0.9
+      height 0.2
+      material Menu/Background/Brown
+    
+    element TextArea(Hints/Panel/Text1)
+    {
+    metrics_mode relative
+    
+         left 0.25
+         top 0.07
+         font_name BlueHighwayBig
+         char_height 0.05
+         colour 1 1 1
+         caption Collect the bananas!
+    }
+
+    }
+}
+
+Ending
+{
+    zorder 200
+	
+    container Panel(Ending/Panel)
+    {
+      metrics_mode relative
+
+      left 0.05
+      top 0.2
+      width 0.9
+      height 0.2
+	    material Menu/Background/PrettyBlue
+	  
+		element TextArea(Ending/Panel/Text1)
+		{
+		metrics_mode relative
+		
+         left 0.15
+		     top 0.07
+         font_name BlueHighwayBig
+         char_height 0.05
+         colour 1 1 1
+         caption Congratulations, you have beat the game! 
+		}
+
+    }
+}
+
+
+Score
+{
+    zorder 100
+	
+    container Panel(Score/Panel)
+    {
+      metrics_mode relative
+
+      left 0.00
+      top 0.9
+      width 0.2
+      height 0.1
+      material Menu/Background/Black
+	  
+		element TextArea(Score/Panel/Text1)
+		{
+		metrics_mode relative
+		
+         left 0.02
+		     top 0.03
+         font_name BlueHighwayBig
+         char_height 0.05
+         colour 1 1 1
+         caption Score: 0
+		}
+    }
+}
+

@@ -1,0 +1,127 @@
+material simpleRed
+{
+   technique
+   {
+     pass
+     {
+       scene_blend alpha_blend
+       depth_write off
+ 
+       texture_unit
+       {
+         colour_op_ex source1 src_manual src_current 1 0 0
+         alpha_op_ex source1 src_manual src_current 1
+       }
+     }
+   }
+}
+
+
+material blueSemiTrans
+{
+   technique
+   {
+     pass
+     {
+       scene_blend alpha_blend
+       depth_write off
+ 
+       texture_unit
+       {
+         colour_op_ex source1 src_manual src_current 0 0 1
+         alpha_op_ex source1 src_manual src_current 0.3
+       }
+     }
+   }
+}
+
+material simpleOrange
+{
+   technique
+   {
+     pass
+     {
+       scene_blend alpha_blend
+       depth_write off
+ 
+       texture_unit
+       {
+         colour_op_ex source1 src_manual src_current 1 0.65 0
+         alpha_op_ex source1 src_manual src_current 1
+       }
+     }
+   }
+
+}
+
+material simpleGreen
+{
+   technique
+   {
+     pass
+     {
+       scene_blend alpha_blend
+       depth_write off
+ 
+       texture_unit
+       {
+         colour_op_ex source1 src_manual src_current 0 1 0
+         alpha_op_ex source1 src_manual src_current 1
+       }
+     }
+   }
+}
+
+material ghostMaterial
+{
+   technique
+   {
+     pass
+     {
+       scene_blend alpha_blend
+       depth_write off
+ 
+       texture_unit
+       {
+         colour_op_ex source1 src_manual src_current 1 1 1
+         alpha_op_ex source1 src_manual src_current 0.2
+       }
+     }
+   }
+}
+
+material ghostMaterial1
+{
+   technique
+   {
+     pass
+     {
+       scene_blend alpha_blend
+       depth_write off
+ 
+       texture_unit
+       {
+         colour_op_ex source1 src_manual src_current 1 0 0
+         alpha_op_ex source1 src_manual src_current 0.2
+       }
+     }
+   }
+}
+
+material ghostMaterial2
+{
+   technique
+   {
+     pass
+     {
+       scene_blend alpha_blend
+       depth_write off
+ 
+       texture_unit
+       {
+         colour_op_ex source1 src_manual src_current 0 1 0
+         alpha_op_ex source1 src_manual src_current 0.2
+       }
+     }
+   }
+}

@@ -1,0 +1,85 @@
+<scene upAxis="y" unitsPerMeter="1" unitType="meters" formatVersion="1.0" minOgreVersion="Latest version" author="EasyOgreExporter">
+    <environment>
+        <colourAmbient r="0" g="0" b="0" />
+        <colourBackground r="0" g="0" b="0" />
+    </environment>
+    <nodes>
+        <node name="cubeBody" id="0" isTarget="false">
+            <position x="0" y="0" z="0" />
+            <rotation qx="-0.707107" qy="-0" qz="-0" qw="-0.707107" />
+            <scale x="0.01" y="0.01" z="0.01" />
+            <animations />
+            <entity name="cubeBody" id="1" meshFile="cubeBody.mesh" castShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="cubeBodymat" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="cubeHair" id="2" isTarget="false">
+            <position x="0" y="0" z="0" />
+            <rotation qx="-0.707107" qy="-0" qz="-0" qw="-0.707107" />
+            <scale x="0.01" y="0.01" z="0.01" />
+            <animations />
+            <entity name="cubeHair" id="3" meshFile="cubeHair.mesh" castShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="cubeHairmat" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="cubeTops" id="4" isTarget="false">
+            <position x="0" y="0" z="0" />
+            <rotation qx="-0.707107" qy="-0" qz="-0" qw="-0.707107" />
+            <scale x="0.01" y="0.01" z="0.01" />
+            <animations />
+            <entity name="cubeTops" id="5" meshFile="cubeTops.mesh" castShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="cubeTopmat" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="cubeBottoms" id="6" isTarget="false">
+            <position x="0" y="0" z="0" />
+            <rotation qx="-0.707107" qy="-0" qz="-0" qw="-0.707107" />
+            <scale x="0.01" y="0.01" z="0.01" />
+            <animations />
+            <entity name="cubeBottoms" id="7" meshFile="cubeBottoms.mesh" castShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="cubeBottommat" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="cubeBeards" id="8" isTarget="false">
+            <position x="0" y="0" z="0" />
+            <rotation qx="-0.707107" qy="-0" qz="-0" qw="-0.707107" />
+            <scale x="0.01" y="0.01" z="0.01" />
+            <animations />
+            <entity name="cubeBeards" id="9" meshFile="cubeBeards.mesh" castShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="cubeBeardmat" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="cubeMoustaches" id="10" isTarget="false">
+            <position x="0" y="0" z="0" />
+            <rotation qx="-0.707107" qy="-0" qz="-0" qw="-0.707107" />
+            <scale x="0.01" y="0.01" z="0.01" />
+            <animations />
+            <entity name="cubeMoustaches" id="11" meshFile="cubeMoustaches.mesh" castShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="cubeMoustachemat" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="cubeShoes" id="12" isTarget="false">
+            <position x="0" y="0" z="0" />
+            <rotation qx="-0.707107" qy="-0" qz="-0" qw="-0.707107" />
+            <scale x="0.01" y="0.01" z="0.01" />
+            <animations />
+            <entity name="cubeShoes" id="13" meshFile="cubeShoes.mesh" castShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="cubeShoesmat" />
+                </subentities>
+            </entity>
+        </node>
+    </nodes>
+</scene>

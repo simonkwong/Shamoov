@@ -1,0 +1,57 @@
+material "cubePackedMaterial0"
+{
+	technique cubePackedMaterial0_technique
+	{
+		pass cubePackedMaterial0_standard
+		{
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 1 1 1 1 76.5
+			emissive 0 0 0 1
+
+			scene_blend alpha_blend
+			depth_write off
+			vertex_program_ref cubevsLightGEN0
+			{
+			}
+			fragment_program_ref cubefpLightGENDIFF0SPEC0
+			{
+			}
+
+			texture_unit cubePackedMaterial0_Diffuse#0
+			{
+				texture cubeJORDAN_packed0_diffuse.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+
+			texture_unit cubePackedMaterial0_Specular#1
+			{
+				texture cubeJORDAN_packed0_diffuse.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+	technique cubePackedMaterial0_basic_technique
+	{
+	scheme basic_mat
+		pass cubePackedMaterial0_standard
+		{
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 1 1 1 1 76.5
+			emissive 0 0 0 1
+
+			scene_blend alpha_blend
+			depth_write off
+
+			texture_unit cubePackedMaterial0_Diffuse#2
+			{
+				texture cubeJORDAN_packed0_diffuse.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+}

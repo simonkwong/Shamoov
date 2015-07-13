@@ -1,0 +1,38 @@
+material BridgeWood
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.25098 0.0666667 0 1
+			diffuse 0.25098 0.0666667 0 1
+			specular 0.9 0.9 0.9 0 1
+
+			texture_unit
+			{
+			}
+		}
+
+	}
+
+}
+
+
+material Cable
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.0156863 0.0156863 0.0156863 1
+			diffuse 0.0156863 0.0156863 0.0156863 1
+			specular 0.9 0.9 0.9 0 10
+
+			texture_unit
+			{
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,9 @@
+{
+	"type" : "DynamicObject",
+	"meshNames" : ["TeaPot.MESH.mesh"],
+	"mass" : 1,
+	"interaction" : 1,
+	"collisionShape" : "btBoxShape",
+	"collisionShapeSize" : [1,1,1],
+	"restitution" : 0.0
+}

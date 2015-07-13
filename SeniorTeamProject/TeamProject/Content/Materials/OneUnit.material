@@ -1,0 +1,14 @@
+
+material OneUnit
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture OneUnit.png
+			}
+		}
+	}
+}

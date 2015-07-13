@@ -1,0 +1,11 @@
+{
+	"type" : "Stage",
+	"DynamicObjects" : [
+		{"name" : "TeaPot", "position" : [0,80,-90], "Orientation" : [1, 0, 0, 0]},
+		{"name" : "TeaPot", "position" : [0,80,-50], "Orientation" : [1, 0, 0, 0]},
+		{"name" : "Tuna", "position" : [10,80,-150], "Orientation" : [1, 0, 0, 0]}
+	],
+	"StaticScenery" : [
+		{"name" : "IceIsland", "position" : [0,0,0], "Orientation" : [0, 0.7, 0, 0]}
+	]
+}

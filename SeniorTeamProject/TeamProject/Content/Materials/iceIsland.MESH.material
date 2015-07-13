@@ -1,0 +1,38 @@
+material Ice
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.988235 0.988235 0.988235 1
+			diffuse 0.988235 0.988235 0.988235 1
+			specular 0.9 0.9 0.9 0.43 79
+
+			texture_unit
+			{
+			}
+		}
+
+	}
+
+}
+
+
+material Water
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.027451 0.129412 0.866667 1
+			diffuse 0.027451 0.129412 0.866667 1
+			specular 0.9 0.9 0.9 0.88 53
+
+			texture_unit
+			{
+			}
+		}
+
+	}
+
+}

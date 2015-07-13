@@ -1,0 +1,73 @@
+material DolphinIsland
+{
+   technique
+   {
+      pass
+      {
+	  
+	  	ambient 0 0.0705882 0.988235 1
+		diffuse 0 0.0705882 0.988235 1
+		specular 0.9 0.9 0.9 0 10
+        
+		texture_unit
+        {
+        }
+      }
+	  
+      pass
+      {
+         scene_blend alpha_blend
+         
+		 texture_unit
+         {
+            texture DolphinIslandTextureMapShore.png             
+            //The alpha_op for this texunit is programatically set, see below
+            //alpha_op_ex modulate src_manual src_texture SOME_NUMBER
+         }
+		 
+         texture_unit
+         {
+            texture beachsand.jpg
+            colour_op_ex blend_current_alpha src_texture src_current
+			scale 0.05 0.05
+         }
+      }
+	  
+
+        pass
+        {
+            // no lighting
+            lighting off
+ 
+            // blend with former pass
+            scene_blend alpha_blend
+ 
+            // only overwrite fragments with the same depth
+            depth_func equal
+ 
+            // alpha map for the dirt
+            texture_unit
+            {
+                texture DolphinIslandGrassMap.png
+ 
+                // use alpha from this texture
+                alpha_op_ex source1 src_texture src_texture
+                // and colour from last pass
+                colour_op_ex source2 src_texture src_texture
+            }
+ 
+            // detail texture
+            texture_unit
+            {
+                texture Grass.jpg
+                scale 0.01 0.01
+                // alpha blend colour with colour from last pass
+                colour_op_ex blend_diffuse_alpha src_texture src_current
+            }
+        }
+ 
+	  
+	  
+	  
+   }
+}

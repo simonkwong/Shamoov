@@ -1,0 +1,11 @@
+material Teapot
+{
+	technique
+	{
+		pass
+		{
+		}
+
+	}
+
+}
