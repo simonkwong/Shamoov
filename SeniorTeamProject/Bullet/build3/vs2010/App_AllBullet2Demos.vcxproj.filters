@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="btgui">
+      <UniqueIdentifier>{8A6CF9E1-5F16-B84F-81E6-18745979B97E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\OpenGLWindow">
+      <UniqueIdentifier>{DE9C8B11-037B-604D-A84B-E09178C14652}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\OpenGLWindow\GlewWindows">
+      <UniqueIdentifier>{A8BAF700-67CF-B945-B5AC-DC93B211DAEB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos3">
+      <UniqueIdentifier>{2303324D-C540-0144-A834-8FA486D3DD47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos3\AllBullet2Demos">
+      <UniqueIdentifier>{E4AED704-3638-974E-86E2-54EB6F012690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos3\bullet2">
+      <UniqueIdentifier>{16706A39-4D9F-544A-8A7C-85802670EA59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos3\bullet2\LuaDemo">
+      <UniqueIdentifier>{A841D43F-04C1-6B43-BEC5-D141C8214071}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos3\bullet2\MultiBodyDemo">
+      <UniqueIdentifier>{1EDC2E51-0106-1A45-A9D9-A6D0D4EE9736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos3\bullet2\CoordinateFrameDemo">
+      <UniqueIdentifier>{C49C6163-075B-0B4F-AD10-BB1ECC225DDE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos3\FiniteElementMethod">
+      <UniqueIdentifier>{F90A7AA6-A523-5543-9AC6-BE1AB9531D79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos">
+      <UniqueIdentifier>{9EF4D195-523E-FA4C-A759-AB2375C4EDD7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\BasicDemo">
+      <UniqueIdentifier>{03A25C71-82AC-8D4A-A51D-6772DF1A6B7C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\CcdPhysicsDemo">
+      <UniqueIdentifier>{6A8BD6FD-768F-324D-9FBD-E3A6393102D8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\Raytracer">
+      <UniqueIdentifier>{B220DA1F-058C-5940-B9E3-A9E1AAA50AAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\SerializeDemo">
+      <UniqueIdentifier>{70BCD4A8-1CCC-764B-B0D3-358D2642D4CA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extras">
+      <UniqueIdentifier>{9CA7149A-27BF-5949-BB4E-0219D098AFD6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extras\Serialize">
+      <UniqueIdentifier>{EC3DD5FD-8D5D-4A47-992C-FC8F47B56860}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extras\Serialize\BulletFileLoader">
+      <UniqueIdentifier>{8B3ACD0E-B5B7-D449-8A19-A28D6610AD21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extras\Serialize\BulletWorldImporter">
+      <UniqueIdentifier>{3966007D-BDCB-EF41-B9AF-7DE0FFDFDC01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos3\bullet2\ConstraintDemo">
+      <UniqueIdentifier>{9B5BA827-5092-A34B-A571-E100254C9128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos3\ImportColladaDemo">
+      <UniqueIdentifier>{01235877-11AE-1B4A-A8A1-92513DD52A81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos3\ImportURDFDemo">
+      <UniqueIdentifier>{464C4A0B-5898-FB45-98C1-8E76BE29590C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos3\ImportObjDemo">
+      <UniqueIdentifier>{FE179836-81E4-6346-9132-32D362155951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos3\ImportSTLDemo">
+      <UniqueIdentifier>{D28971BE-BDA9-0041-94C8-857D1DCAB208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos3\Wavefront">
+      <UniqueIdentifier>{41751B48-DF1F-B74C-900A-E50F48A0D326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf">
+      <UniqueIdentifier>{697DF594-C751-3F4A-86AC-8F0400D34296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom">
+      <UniqueIdentifier>{1B54AA57-7C46-6D45-A426-63366EB1523E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom\urdf_parser">
+      <UniqueIdentifier>{C0403864-FEF4-364E-B709-CF0A23996833}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom\urdf_parser\src">
+      <UniqueIdentifier>{D5FA74AD-B1C5-2742-8142-D61A5C09F304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom\urdf_parser\include">
+      <UniqueIdentifier>{B326588E-A5CB-7E4F-95BA-F4F3361D6193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom\urdf_parser\include\urdf_parser">
+      <UniqueIdentifier>{84A7627F-9761-BD4E-9DCB-D4528C57D556}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom_headers">
+      <UniqueIdentifier>{EF2D33CB-F491-CC4D-8E06-37FC2DF56A78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom_headers\urdf_exception">
+      <UniqueIdentifier>{DC4E13A1-53B8-7A40-BA83-0A5CA056E3E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom_headers\urdf_exception\include">
+      <UniqueIdentifier>{2BD9CFAC-CD1F-8D4A-B342-5FF1A6A9E43D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom_headers\urdf_exception\include\urdf_exception">
+      <UniqueIdentifier>{3D447690-177F-394E-8314-5AF78CFD21AA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom_headers\urdf_model">
+      <UniqueIdentifier>{92195F60-553E-A74F-83C4-8F0B98D09D9E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom_headers\urdf_model\include">
+      <UniqueIdentifier>{5EC62BB0-DEC8-D546-B810-477D2A8CE60A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom_headers\urdf_model\include\urdf_model">
+      <UniqueIdentifier>{CE2653BE-A8BD-BF48-840B-B7B96EAFF578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\tinyxml">
+      <UniqueIdentifier>{6F193205-FB40-684D-B5AA-0834CAB594B5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\boost_replacement">
+      <UniqueIdentifier>{18B44A9D-8479-9B48-85CD-98AAC30AF498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos3\bullet2\FeatherstoneMultiBodyDemo">
+      <UniqueIdentifier>{A42A3F3E-7E92-574F-9FED-42629FE49D82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos3\bullet2\BasicDemo">
+      <UniqueIdentifier>{83062812-B9B5-5446-9EB8-C2D084C048C3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Demos3\AllBullet2Demos\BulletDemoEntries.h">
+      <Filter>Demos3\AllBullet2Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Demos3\bullet2\LuaDemo\LuaPhysicsSetup.h">
+      <Filter>Demos3\bullet2\LuaDemo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Demos3\bullet2\MultiBodyDemo\TestJointTorqueSetup.h">
+      <Filter>Demos3\bullet2\MultiBodyDemo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Demos3\bullet2\MultiBodyDemo\MultiBodyVehicle.h">
+      <Filter>Demos3\bullet2\MultiBodyDemo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Demos3\bullet2\CoordinateFrameDemo\CoordinateFrameDemoPhysicsSetup.h">
+      <Filter>Demos3\bullet2\CoordinateFrameDemo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Demos\BasicDemo\BasicDemoPhysicsSetup.h">
+      <Filter>Demos\BasicDemo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Demos\CcdPhysicsDemo\CcdPhysicsSetup.h">
+      <Filter>Demos\CcdPhysicsDemo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Demos\Raytracer\RaytracerSetup.h">
+      <Filter>Demos\Raytracer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Demos3\bullet2\ConstraintDemo\ConstraintPhysicsSetup.h">
+      <Filter>Demos3\bullet2\ConstraintDemo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Demos3\ImportObjDemo\LoadMeshFromObj.h">
+      <Filter>Demos3\ImportObjDemo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Demos3\Wavefront\tiny_obj_loader.h">
+      <Filter>Demos3\Wavefront</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\btgui\urdf\urdfdom\urdf_parser\include\urdf_parser\urdf_parser.h">
+      <Filter>btgui\urdf\urdfdom\urdf_parser\include\urdf_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\btgui\urdf\urdfdom_headers\urdf_exception\include\urdf_exception\exception.h">
+      <Filter>btgui\urdf\urdfdom_headers\urdf_exception\include\urdf_exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\btgui\urdf\urdfdom_headers\urdf_model\include\urdf_model\pose.h">
+      <Filter>btgui\urdf\urdfdom_headers\urdf_model\include\urdf_model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\btgui\urdf\urdfdom_headers\urdf_model\include\urdf_model\model.h">
+      <Filter>btgui\urdf\urdfdom_headers\urdf_model\include\urdf_model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\btgui\urdf\urdfdom_headers\urdf_model\include\urdf_model\link.h">
+      <Filter>btgui\urdf\urdfdom_headers\urdf_model\include\urdf_model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\btgui\urdf\urdfdom_headers\urdf_model\include\urdf_model\joint.h">
+      <Filter>btgui\urdf\urdfdom_headers\urdf_model\include\urdf_model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\btgui\urdf\boost_replacement\lexical_cast.h">
+      <Filter>btgui\urdf\boost_replacement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\btgui\urdf\boost_replacement\shared_ptr.h">
+      <Filter>btgui\urdf\boost_replacement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\btgui\urdf\boost_replacement\printf_console.h">
+      <Filter>btgui\urdf\boost_replacement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\btgui\urdf\boost_replacement\string_split.h">
+      <Filter>btgui\urdf\boost_replacement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Demos3\bullet2\FeatherstoneMultiBodyDemo\BulletMultiBodyDemos.h">
+      <Filter>Demos3\bullet2\FeatherstoneMultiBodyDemo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Demos3\bullet2\FeatherstoneMultiBodyDemo\MultiDofDemo.h">
+      <Filter>Demos3\bullet2\FeatherstoneMultiBodyDemo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Demos3\bullet2\BasicDemo\BasicDemo.h">
+      <Filter>Demos3\bullet2\BasicDemo</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\btgui\OpenGLWindow\GlewWindows\glew.c">
+      <Filter>btgui\OpenGLWindow\GlewWindows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos3\AllBullet2Demos\main.cpp">
+      <Filter>Demos3\AllBullet2Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos3\bullet2\LuaDemo\LuaPhysicsSetup.cpp">
+      <Filter>Demos3\bullet2\LuaDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos3\bullet2\MultiBodyDemo\TestJointTorqueSetup.cpp">
+      <Filter>Demos3\bullet2\MultiBodyDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos3\bullet2\MultiBodyDemo\MultiBodyVehicle.cpp">
+      <Filter>Demos3\bullet2\MultiBodyDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos3\bullet2\CoordinateFrameDemo\CoordinateFrameDemoPhysicsSetup.cpp">
+      <Filter>Demos3\bullet2\CoordinateFrameDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos3\FiniteElementMethod\FiniteElementDemo.cpp">
+      <Filter>Demos3\FiniteElementMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos\BasicDemo\BasicDemoPhysicsSetup.cpp">
+      <Filter>Demos\BasicDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos\CcdPhysicsDemo\CcdPhysicsSetup.cpp">
+      <Filter>Demos\CcdPhysicsDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos\Raytracer\RaytracerSetup.cpp">
+      <Filter>Demos\Raytracer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos\SerializeDemo\SerializeSetup.cpp">
+      <Filter>Demos\SerializeDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\Serialize\BulletFileLoader\bChunk.cpp">
+      <Filter>Extras\Serialize\BulletFileLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\Serialize\BulletFileLoader\bDNA.cpp">
+      <Filter>Extras\Serialize\BulletFileLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\Serialize\BulletFileLoader\bFile.cpp">
+      <Filter>Extras\Serialize\BulletFileLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\Serialize\BulletFileLoader\btBulletFile.cpp">
+      <Filter>Extras\Serialize\BulletFileLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\Serialize\BulletWorldImporter\btBulletWorldImporter.cpp">
+      <Filter>Extras\Serialize\BulletWorldImporter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp">
+      <Filter>Extras\Serialize\BulletWorldImporter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos3\bullet2\ConstraintDemo\ConstraintPhysicsSetup.cpp">
+      <Filter>Demos3\bullet2\ConstraintDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos3\ImportColladaDemo\LoadMeshFromCollada.cpp">
+      <Filter>Demos3\ImportColladaDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos3\ImportColladaDemo\ImportColladaSetup.cpp">
+      <Filter>Demos3\ImportColladaDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos3\ImportURDFDemo\ImportURDFSetup.cpp">
+      <Filter>Demos3\ImportURDFDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos3\ImportObjDemo\ImportObjSetup.cpp">
+      <Filter>Demos3\ImportObjDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos3\ImportObjDemo\LoadMeshFromObj.cpp">
+      <Filter>Demos3\ImportObjDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos3\ImportObjDemo\Wavefront2GLInstanceGraphicsShape.cpp">
+      <Filter>Demos3\ImportObjDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos3\ImportSTLDemo\ImportSTLSetup.cpp">
+      <Filter>Demos3\ImportSTLDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos3\Wavefront\tiny_obj_loader.cpp">
+      <Filter>Demos3\Wavefront</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\urdf\urdfdom\urdf_parser\src\pose.cpp">
+      <Filter>btgui\urdf\urdfdom\urdf_parser\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\urdf\urdfdom\urdf_parser\src\model.cpp">
+      <Filter>btgui\urdf\urdfdom\urdf_parser\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\urdf\urdfdom\urdf_parser\src\link.cpp">
+      <Filter>btgui\urdf\urdfdom\urdf_parser\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\urdf\urdfdom\urdf_parser\src\joint.cpp">
+      <Filter>btgui\urdf\urdfdom\urdf_parser\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\tinyxml\tinystr.cpp">
+      <Filter>btgui\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\tinyxml\tinyxml.cpp">
+      <Filter>btgui\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\tinyxml\tinyxmlerror.cpp">
+      <Filter>btgui\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\tinyxml\tinyxmlparser.cpp">
+      <Filter>btgui\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\urdf\boost_replacement\printf_console.cpp">
+      <Filter>btgui\urdf\boost_replacement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\urdf\boost_replacement\string_split.cpp">
+      <Filter>btgui\urdf\boost_replacement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos3\bullet2\FeatherstoneMultiBodyDemo\BulletMultiBodyDemos.cpp">
+      <Filter>Demos3\bullet2\FeatherstoneMultiBodyDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos3\bullet2\FeatherstoneMultiBodyDemo\MultiDofDemo.cpp">
+      <Filter>Demos3\bullet2\FeatherstoneMultiBodyDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos3\bullet2\BasicDemo\BasicDemo.cpp">
+      <Filter>Demos3\bullet2\BasicDemo</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

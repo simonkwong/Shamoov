@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="btgui">
+      <UniqueIdentifier>{8BB93DFF-CD1E-DB4A-80B5-1B21BED8C986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\lua-5.2.3">
+      <UniqueIdentifier>{FE872C8E-FBF0-CD48-9CD5-8A2386665FAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\lua-5.2.3\lua_standalone">
+      <UniqueIdentifier>{C6A9BEA8-51F0-AC47-8C92-5EF886D83F2B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\btgui\lua-5.2.3\lua_standalone\lua.c">
+      <Filter>btgui\lua-5.2.3\lua_standalone</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

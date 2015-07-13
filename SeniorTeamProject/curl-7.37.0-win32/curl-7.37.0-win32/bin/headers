@@ -1,0 +1,11 @@
+HTTP/1.1 302 FOUND
+Server: nginx/1.0.15
+Date: Tue, 01 Jul 2014 17:07:59 GMT
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+Content-Length: 281
+Location: https://creamstout.cs.usfca.edu/index
+Set-Cookie: session=eyJ1c2VybmFtZSI6eyIgYiI6Ik1URXhNVEU9In19.BpR8bw.As_TAd33UqEO2l9QguHNtG1LkFI; HttpOnly; Path=/
+Expires: Wed, 01 Jul 2015 17:07:59 GMT
+Cache-Control: max-age=31536000
+

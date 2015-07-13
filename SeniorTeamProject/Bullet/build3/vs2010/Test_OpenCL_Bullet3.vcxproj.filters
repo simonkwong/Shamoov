@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{365E9D91-D9CD-CA47-968D-2F80D5E22FB6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\clew">
+      <UniqueIdentifier>{317A5FBC-4E28-D949-A660-E9C107A51EF3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui">
+      <UniqueIdentifier>{F444B4F3-F803-5940-8B2B-59FBCC212D6A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\minizip">
+      <UniqueIdentifier>{9A5F87E2-424A-BD42-8C13-0179792629D5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\zlib">
+      <UniqueIdentifier>{6BF191E9-C8D4-1049-A50A-96F36E76B8A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{335D05DD-38D3-5942-8E43-A7DF0D7B87CC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\TestBullet3OpenCL">
+      <UniqueIdentifier>{BEBB84B4-4E63-4046-9301-DB71F6EEC482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\OpenCL">
+      <UniqueIdentifier>{21805DBA-001B-ED48-A2FD-95FBC7967608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\OpenCL\BasicInitialize">
+      <UniqueIdentifier>{B45F01A6-3BAF-8849-8E66-AAC0F7DF306F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\OpenCL\AllBullet3Kernels">
+      <UniqueIdentifier>{87738E29-D0AD-FF42-AF99-1B2785CED8C8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\clew\clew.h">
+      <Filter>src\clew</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\clew\clew.c">
+      <Filter>src\clew</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\minizip\ioapi.c">
+      <Filter>btgui\minizip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\minizip\unzip.c">
+      <Filter>btgui\minizip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\minizip\zip.c">
+      <Filter>btgui\minizip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\zlib\adler32.c">
+      <Filter>btgui\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\zlib\compress.c">
+      <Filter>btgui\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\zlib\crc32.c">
+      <Filter>btgui\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\zlib\deflate.c">
+      <Filter>btgui\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\zlib\gzclose.c">
+      <Filter>btgui\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\zlib\gzlib.c">
+      <Filter>btgui\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\zlib\gzread.c">
+      <Filter>btgui\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\zlib\gzwrite.c">
+      <Filter>btgui\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\zlib\infback.c">
+      <Filter>btgui\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\zlib\inffast.c">
+      <Filter>btgui\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\zlib\inflate.c">
+      <Filter>btgui\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\zlib\inftrees.c">
+      <Filter>btgui\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\zlib\trees.c">
+      <Filter>btgui\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\zlib\uncompr.c">
+      <Filter>btgui\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\zlib\zutil.c">
+      <Filter>btgui\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\TestBullet3OpenCL\main.cpp">
+      <Filter>test\TestBullet3OpenCL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\OpenCL\BasicInitialize\testInitOpenCL.cpp">
+      <Filter>test\OpenCL\BasicInitialize</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\OpenCL\AllBullet3Kernels\testCompileBullet3BroadphaseKernels.cpp">
+      <Filter>test\OpenCL\AllBullet3Kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\OpenCL\AllBullet3Kernels\testCompileBullet3IntegrateUpdateAabbKernels.cpp">
+      <Filter>test\OpenCL\AllBullet3Kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\OpenCL\AllBullet3Kernels\testCompileBullet3JacobiContactSolverKernels.cpp">
+      <Filter>test\OpenCL\AllBullet3Kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\OpenCL\AllBullet3Kernels\testCompileBullet3NarrowphaseKernels.cpp">
+      <Filter>test\OpenCL\AllBullet3Kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\OpenCL\AllBullet3Kernels\testCompileBullet3PgsContactSolverKernels.cpp">
+      <Filter>test\OpenCL\AllBullet3Kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\OpenCL\AllBullet3Kernels\testCompileBullet3PgsJointSolverKernels.cpp">
+      <Filter>test\OpenCL\AllBullet3Kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\OpenCL\AllBullet3Kernels\testCompileBullet3RaycastKernels.cpp">
+      <Filter>test\OpenCL\AllBullet3Kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\OpenCL\AllBullet3Kernels\testExecuteBullet3NarrowphaseKernels.cpp">
+      <Filter>test\OpenCL\AllBullet3Kernels</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{AAB6C9E6-F625-364E-BECD-D76F863CEA8F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\clew">
+      <UniqueIdentifier>{6C3337B4-5329-2745-AB17-7AD50AB4FEF1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{06E2946F-794F-A547-A9D0-AD48E32B6C74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\OpenCL">
+      <UniqueIdentifier>{685A2053-AA1B-CC48-BB8B-02327D9DF239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\OpenCL\KernelLaunch">
+      <UniqueIdentifier>{CE577D50-2365-414E-AAC9-FD94BA9B8089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Bullet3OpenCL">
+      <UniqueIdentifier>{36101839-0F9A-7741-BF09-456E02B964A2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Bullet3OpenCL\Initialize">
+      <UniqueIdentifier>{AD7973D6-07B1-4E4D-A796-40CE8E9369FB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Bullet3Common">
+      <UniqueIdentifier>{3E0ABEAE-E00A-BD47-B04A-5E0CAFD77B73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Bullet3OpenCL\ParallelPrimitives">
+      <UniqueIdentifier>{225FCF01-FA87-D043-9238-AD5E41306F5A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\clew\clew.h">
+      <Filter>src\clew</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Bullet3OpenCL\Initialize\b3OpenCLUtils.h">
+      <Filter>src\Bullet3OpenCL\Initialize</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\clew\clew.c">
+      <Filter>src\clew</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\OpenCL\KernelLaunch\main.cpp">
+      <Filter>test\OpenCL\KernelLaunch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Bullet3OpenCL\Initialize\b3OpenCLUtils.cpp">
+      <Filter>src\Bullet3OpenCL\Initialize</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Bullet3Common\b3AlignedAllocator.cpp">
+      <Filter>src\Bullet3Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Bullet3Common\b3Logging.cpp">
+      <Filter>src\Bullet3Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Bullet3OpenCL\ParallelPrimitives\b3LauncherCL.cpp">
+      <Filter>src\Bullet3OpenCL\ParallelPrimitives</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

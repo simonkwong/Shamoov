@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="btgui">
+      <UniqueIdentifier>{BB5D25D3-C441-934B-937F-E6DCF17E8304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf">
+      <UniqueIdentifier>{CCB5751A-954B-F645-8192-ECD0AA560FF9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom">
+      <UniqueIdentifier>{D8F73FB6-447C-BF4D-83B6-0E55BC8C9321}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom\urdf_parser">
+      <UniqueIdentifier>{0EC4BB8D-9896-2E47-9A2F-9E6178C34283}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom\urdf_parser\src">
+      <UniqueIdentifier>{D6C13DC8-EAF5-5E4A-B6A2-6E57F9229EF5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom\urdf_parser\include">
+      <UniqueIdentifier>{005737D3-726D-AF48-B4A0-0565A68A0B8F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom\urdf_parser\include\urdf_parser">
+      <UniqueIdentifier>{363D7866-9660-5A4C-9959-7A2C8C496DBA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom_headers">
+      <UniqueIdentifier>{1511088E-346D-4D48-B0FF-F75943CA2D33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom_headers\urdf_exception">
+      <UniqueIdentifier>{72F86084-F519-F04C-875A-4A2C88F93645}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom_headers\urdf_exception\include">
+      <UniqueIdentifier>{0120C459-20C8-B841-A2B3-6570EB1C6F94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom_headers\urdf_exception\include\urdf_exception">
+      <UniqueIdentifier>{0338FCCB-FF4A-9042-877B-29DF13AEFB55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom_headers\urdf_model">
+      <UniqueIdentifier>{F297EF72-E244-1546-81E1-A6C327E3DBFA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom_headers\urdf_model\include">
+      <UniqueIdentifier>{E2E51F75-0324-7442-B702-430B411D4374}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\urdfdom_headers\urdf_model\include\urdf_model">
+      <UniqueIdentifier>{9F88D86C-C792-C24D-97DF-6E6AB07195C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\tinyxml">
+      <UniqueIdentifier>{C5F78AF7-895B-3043-B33F-5D223B0874AB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="btgui\urdf\boost_replacement">
+      <UniqueIdentifier>{8A43439A-F971-4C49-BC22-99DB683E9B1B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\btgui\urdf\urdfdom\urdf_parser\include\urdf_parser\urdf_parser.h">
+      <Filter>btgui\urdf\urdfdom\urdf_parser\include\urdf_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\btgui\urdf\urdfdom_headers\urdf_exception\include\urdf_exception\exception.h">
+      <Filter>btgui\urdf\urdfdom_headers\urdf_exception\include\urdf_exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\btgui\urdf\urdfdom_headers\urdf_model\include\urdf_model\pose.h">
+      <Filter>btgui\urdf\urdfdom_headers\urdf_model\include\urdf_model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\btgui\urdf\urdfdom_headers\urdf_model\include\urdf_model\model.h">
+      <Filter>btgui\urdf\urdfdom_headers\urdf_model\include\urdf_model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\btgui\urdf\urdfdom_headers\urdf_model\include\urdf_model\link.h">
+      <Filter>btgui\urdf\urdfdom_headers\urdf_model\include\urdf_model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\btgui\urdf\urdfdom_headers\urdf_model\include\urdf_model\joint.h">
+      <Filter>btgui\urdf\urdfdom_headers\urdf_model\include\urdf_model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\btgui\urdf\boost_replacement\lexical_cast.h">
+      <Filter>btgui\urdf\boost_replacement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\btgui\urdf\boost_replacement\shared_ptr.h">
+      <Filter>btgui\urdf\boost_replacement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\btgui\urdf\boost_replacement\printf_console.h">
+      <Filter>btgui\urdf\boost_replacement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\btgui\urdf\boost_replacement\string_split.h">
+      <Filter>btgui\urdf\boost_replacement</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\btgui\urdf\urdfdom\urdf_parser\src\check_urdf.cpp">
+      <Filter>btgui\urdf\urdfdom\urdf_parser\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\urdf\urdfdom\urdf_parser\src\pose.cpp">
+      <Filter>btgui\urdf\urdfdom\urdf_parser\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\urdf\urdfdom\urdf_parser\src\model.cpp">
+      <Filter>btgui\urdf\urdfdom\urdf_parser\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\urdf\urdfdom\urdf_parser\src\link.cpp">
+      <Filter>btgui\urdf\urdfdom\urdf_parser\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\urdf\urdfdom\urdf_parser\src\joint.cpp">
+      <Filter>btgui\urdf\urdfdom\urdf_parser\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\tinyxml\tinystr.cpp">
+      <Filter>btgui\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\tinyxml\tinyxml.cpp">
+      <Filter>btgui\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\tinyxml\tinyxmlerror.cpp">
+      <Filter>btgui\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\tinyxml\tinyxmlparser.cpp">
+      <Filter>btgui\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\urdf\boost_replacement\printf_console.cpp">
+      <Filter>btgui\urdf\boost_replacement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\btgui\urdf\boost_replacement\string_split.cpp">
+      <Filter>btgui\urdf\boost_replacement</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
